@@ -1,3 +1,5 @@
+use crate::macros::run_parts;
+
 mod part1;
 mod part2;
 mod tests;
@@ -6,9 +8,7 @@ use std::cmp::{max};
 
 pub(crate) fn run()
 {
-    let input = include_str!("input.txt");
-    println!("day02 part1 {}", part1::solve(input));
-    println!("day02 part2 {}", part2::solve(input));
+    run_parts!(day01: part1, part2);
 }
 
 

@@ -1,5 +1,3 @@
-use crate::day01;
-
 #[test]
 fn part_1()
 {
@@ -8,7 +6,7 @@ fn part_1()
     a1b2c3d4e5f
     treb7uchet"#;
 
-    let result = day01::part1::solve(example);
+    let result = crate::day01::part1::solve(example);
     assert_eq!(result, 142);
 }
 
@@ -23,6 +21,6 @@ xtwone3four
 zoneight234
 7pqrstsixteen"#;
 
-    let result = day01::part2::solve(example);
+    let result = crate::day01::part2::solve(example);
     assert_eq!(result, 281);
 }
