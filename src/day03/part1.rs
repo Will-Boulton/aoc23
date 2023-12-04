@@ -5,7 +5,6 @@ pub(crate) fn solve(input: &str) -> usize {
     let mut parts = vec![];
     let h = lines.len();
     let w = lines.first().unwrap().len();
-    println!("h{} w {}", h,w);
     for y in 0..h {
         let mut num_start:usize = 0;
         let mut num = String::new();
@@ -25,7 +24,6 @@ pub(crate) fn solve(input: &str) -> usize {
                         let (x1, x2, y1, y2) = (num_start.checked_sub(1).unwrap_or(0usize), min(x,w-1), y.checked_sub(1).unwrap_or(0usize),min(y+1,h-1));
                         for a in x1..=x2  {
                             for b in y1..=y2{
-                                //print!("{} {}",a,b);
                                 if b == y && (a >= num_start && a <= x-1) {
                                     continue
                                 }
@@ -69,18 +67,3 @@ fn is_symbol(c :char) -> bool{
     }
     return true;
 }
-
-fn filter_parts(part: &Part, lines: &Vec<&str>) -> Option<usize>
-{
-
-return None;
-}
-
-struct Part
-{
-    number : usize,
-    line : usize,
-    range : (usize, usize)
-}
-
-// 476765 too low
