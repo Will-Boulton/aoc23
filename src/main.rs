@@ -16,7 +16,7 @@ macro_rules! import_days {
 
 
 
-import_days!(day01, day02, day03);
+import_days!(day01, day02, day03, day04);
 
 mod macros
 {

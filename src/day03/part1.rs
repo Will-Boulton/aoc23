@@ -1,9 +1,9 @@
 pub(crate) fn solve(input: &str) -> usize {
     let lines: Vec<&str> = input.lines().collect();
 
-    let maybe_parts = vec![];
+    //let maybe_parts = vec![];
 
-    for line in lines {
+    /*for line in lines {
         let mut chars = line.chars();
         let (mut s, mut e) = (0usize,0usize);
         let num = String::new();
@@ -15,7 +15,7 @@ pub(crate) fn solve(input: &str) -> usize {
                 }
             }
         }
-    }
+    }*/
 
     return 0;
 }
